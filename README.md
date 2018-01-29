@@ -4,7 +4,7 @@ Docker container for [Jack Twilley's tomorse](https://github.com/mathuin/tomorse
 
 ### Run
 
-For an input file hello.txt in the current working directory, generate the Morse Code sound file equivalent (7 words per minute)
+For an input file hello.txt in the current working directory, generate the Morse Code sound file equivalent (7 words per minute, character speed 10 words per minute)
 
 ```
 $ docker run -it -v $(pwd):/out -v $(pwd):/in -e LD_LIBRARY_PATH=/usr/local/lib ae6rt/tomorse:latest bash -c "cat /in/hello.txt | /tomorse/tomorse -s 7 -c 10 > /out/hello.wav"
