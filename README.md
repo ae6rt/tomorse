@@ -13,6 +13,12 @@ generate the Morse Code sound file equivalent (7 words per minute,
 character speed 10 words per minute) hello.wav in the current working
 directory.
 
+One time Docker Hub login (see link below)
+
+```
+$ docker login <your docker hub login name>
+```
+
 ```
 $ docker run -it -v $(pwd):/out -v $(pwd):/in -e LD_LIBRARY_PATH=/usr/local/lib ae6rt/tomorse:latest bash -c "cat /in/hello.txt | /tomorse/tomorse -s 7 -c 10 > /out/hello.wav"
 ```
@@ -27,7 +33,6 @@ $ docker build -t ae6rt/tomorse:latest .
 
 ### Reference
 
-Install Docker for your desktop platform
-
-https://docs.docker.com/install/#supported-platforms
+* [Install Docker for your desktop platform](https://docs.docker.com/install/#supported-platforms)
+* To run the container, you will need a [Docker Hub login](https://hub.docker.com/)
 
