@@ -1,6 +1,6 @@
 ## tomorse docker container
 
-[Jack Twilley's tomorse](https://github.com/mathuin/tomorse) text-to-Morse Code converter.
+Docker container for [Jack Twilley's tomorse](https://github.com/mathuin/tomorse) text-to-Morse Code converter.
 
 ### Run
 
