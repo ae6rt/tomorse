@@ -12,8 +12,17 @@ $ docker run -it -v $(pwd):/out -v $(pwd):/in -e LD_LIBRARY_PATH=/usr/local/lib 
 
 Open the resulting hello.wav file in your favorite audio player.
 
+### Building the container
+
+The container is already published to Docker Hub, but for completeness, this is how it was built:
+
+```
+$ docker build -t ae6rt/tomorse:latest .
+```
+
 ### Reference
 
 Install Docker for your desktop platform
 
 https://docs.docker.com/install/#supported-platforms
+
